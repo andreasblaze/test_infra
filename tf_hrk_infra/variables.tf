@@ -1,0 +1,1 @@
+//variable "hrk_key" {}

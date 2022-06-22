@@ -1,0 +1,12 @@
+.terraform
+.terraform.lock.hcl
+.idea*
+
+module/
+examples/
+env/
+
+providers.tf
+
+*.tfstate
+*.backup
