@@ -10,3 +10,5 @@ providers.tf
 
 *.tfstate
 *.backup
+
+.gitignore

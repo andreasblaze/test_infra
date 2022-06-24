@@ -1,8 +1,12 @@
 resource "aws_instance" "hrk_01" {
-    ami           = "ami-08bdc08970fcbd34a"
+    ami           = data.aws_ami.amazon_linux.id
     instance_type = "t3.micro"
     vpc_security_group_ids = [aws_security_group.hrk_SG.id]
-    //key_name = "hrk-key"
+    key_name      = "hrk-key"
+
+    tags = {
+    Name = "tf_hrk_infra"
+  }
 }
 
 resource "tls_private_key" "hrk_RSA" {
