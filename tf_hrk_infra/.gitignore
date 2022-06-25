@@ -5,7 +5,7 @@
 module/
 examples/
 env/
-
+hrk-key
 providers.tf
 
 *.tfstate
